@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900px" height="701px" viewBox="0 0 900 701" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Oval</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M720.952992,701 C810.621552,701 901,675.546247 901,664.430198 C901,657.019499 901,619.759746 901,552.65094 C901.076039,381.846587 901.076039,197.629607 901,0 L1,0 C0.301994606,192.479747 -0.0276597839,376.696727 0.0110368304,552.65094 C198.26843,645.550806 448.694858,701 720.952992,701 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Email-(web)">
+            <g id="Group-25" transform="translate(-1.000000, 0.000000)">
+                <g id="Group-15">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Oval" fill="#F3F7FF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

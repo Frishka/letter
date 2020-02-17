@@ -1,0 +1,12 @@
+{
+    "name": "admin/letter",
+    "require": {
+        "sendgrid/sendgrid": "~7"
+    },
+    "authors": [
+        {
+            "name": "Andrii Polyvianyi",
+            "email": "polyvyanyy.andrii@gmail.com"
+        }
+    ]
+}
