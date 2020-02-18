@@ -27,16 +27,7 @@ img {
 .webkit {
     max-width: 600px;
 }
-.flex-box{
-    display: flex;
-    flex-direction: row;
-}
-.flex-box.reverse{
-    flex-direction: column-reverse;
-}
-.flex-box > span:first-child{
-    /*order: 1;*/
-}
+
 .btn{
     display:inline-block;
     max-width:200px;
@@ -48,7 +39,9 @@ img {
     text-decoration: none;
     font-size:10px;
     text-transform: uppercase;
-    box-shadow: 0 6px 40px 0px rgba(9, 47, 72, 0.5);
+    box-shadow:0 6px 15px 0px rgba(9, 47, 72, 0.5);
+    -webkit-box-shadow:0 6px 15px 0px rgba(9, 47, 72, 0.5);
+    -moz-box-shadow:0 6px 15px 0px rgba(9, 47, 72, 0.5);
     font-family: Helvetica,Verdana,Arial,sans-serif;
 }
 
@@ -57,13 +50,23 @@ img {
     transform: scaleX(-1);
 }
 .header-section{
-    background:  url('./images/bg.svg') 100% 100% no-repeat; width:100%;padding-bottom: 28px;
+    background:  url('./images/bg.svg') 100% 100% no-repeat;
+    width:100%;
+    padding-bottom: 28px;
 }
 .header-left-block{
-    display:inline-block;text-align: center;width: 100%;max-width: 200px;padding: 18px 0;
+    display:inline-block;
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
+    padding: 18px 0;
 }
 .header-right-block{
-    display:inline-block;width: 100%; max-width: 340px;padding: 0 15px;height:250px;
+    display:inline-block;
+    width: 100%;
+    max-width: 340px;
+    padding: 0 15px;
+    height:250px;
 }
 .logo-parent{
     text-align: right;
@@ -93,7 +96,6 @@ h6.header-desc{
     transform: scaleX(-1);
     font-family: Helvetica,Verdana,Arial,sans-serif;
 }
-
 .header-btn-parent{
     text-align: left;
     transform: scaleX(-1);
@@ -147,9 +149,49 @@ h6.header-desc{
 /*ENDCONTENT*/
 
 /*FOOTER*/
-
+.footer-td{
+    padding:10px 0 40px;
+}
+.footer-text{
+    float:left;
+    margin:0;
+    font-family: Helvetica,Verdana,Arial,sans-serif;
+    color: #3B5266;
+    font-size: 12px;
+    letter-spacing: .4px;
+    font-weight: 400;
+}
+.footer-network-list{
+    list-style: none;
+    margin: 0;
+    padding:0;
+    float:right;
+}
+.footer-network-list>li{
+    display: inline-block;
+    margin-left: 30px;
+}
+.icon-facebook,.icon-twitter,.icon-instagram{
+    display:inline-block;
+    height:18px;
+    width:18px;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+.icon-facebook{
+    background-image: url('./icons/social-media-facebook.svg');
+}
+.icon-twitter{
+    background-image: url('./icons/social-media-twitter.svg');
+}
+.icon-instagram{
+    background-image: url('./icons/social-media-instagram.svg');
+}
 /*ENDFOOTER*/
+
+/*MEDIA*/
 @media only screen and (max-width: 590px){
+    /*HEADER*/
     .logo-img{
         height: 42px !important;
         margin: 0 !important;
@@ -177,11 +219,9 @@ h6.header-desc{
     .header-right-block{
         padding: 0 !important;
     }
-    /*CONTENT*/
-    .content-main-title{
-        /*padding: 15px 62px;*/
+    /*ENDHEADER*/
 
-    }
+    /*CONTENT*/
     .content-title{
         margin: 20px 0 0 0 !important;
         color:#172744 !important;
@@ -191,9 +231,41 @@ h6.header-desc{
         padding: 5px 2px !important;
         text-align: center !important;
         height:auto !important;
+        font-size: 16px !important;
+        line-height: 24px !important;
     }
     .content-right-block{
         padding: 0 !important;
     }
     /*ENDCONTENT*/
+
+    /*FOOTER*/
+    .footer-section{
+        background-color: #F4F7FF !important;
+        margin-top: 35px !important;
+    }
+    .footer-td{
+        padding:40px !important;
+    }
+    .footer-network-list > li:first-child{
+        margin-left: 0 !important;
+    }
+    .footer-network-list{
+        float:none !important;
+        text-align: center !important;
+    }
+    .footer-text{
+        font-size: 18px !important;
+        font-weight: 400 !important;
+        text-align: center !important;
+        float: none !important;
+        margin: 0 0 25px 0 !important;
+        line-height: 24px !important;
+    }
+    .footer-text span{
+        display: block !important;
+        text-align: center !important;
+    }
+    /*ENDFOOTER*/
 }
+/*ENDMEDIA*/
